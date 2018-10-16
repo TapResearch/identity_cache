@@ -290,9 +290,9 @@ module IdentityCache
       end
 
       def ensure_base_model
-        if self != cached_model
-          raise DerivedModelError, "IdentityCache class methods must be called on the same model that includes IdentityCache"
-        end
+        # if self != cached_model
+        #   raise DerivedModelError, "IdentityCache class methods must be called on the same model that includes IdentityCache"
+        # end
       end
 
       def ensure_cacheable_association(association, options)
